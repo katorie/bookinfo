@@ -1,9 +1,4 @@
 <%# encoding: utf-8 %>
-<% require 'rubygems' %>
-<% require 'dbi' %>
-
-<% dbh = DBI.connect( 'DBI:SQLite3:bookinfo_sqlite.rb' ) %>
-<% row = dbh.select_one("selet * from bookinfos where id=\'#{target_id}\'") %>
 
 <html>
 <head>

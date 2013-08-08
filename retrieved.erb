@@ -37,8 +37,7 @@
 <% end %>
   </tr>
   
-<%# rows.each do |row| %>
-<% dbh.select_all("select * from bookinfos #{where_data};") do |row| %>
+<% rows.each do |row| %>
   <tr>
 <% ['id','title','author','page','publish_date'].each do |name| %>
 <%    if name == 'id' then %>

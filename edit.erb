@@ -1,4 +1,4 @@
-<%# encoding:utf-8 %>
+<%# encoding: utf-8 %>
 <% require 'rubygems' %>
 <% require 'dbi' %>
 
@@ -17,6 +17,7 @@
 <p>このデータを修正します|
 <a href="list.erb">蔵書データの表示</a>|
 <a href="index.html">メニュー画面に戻る</a></p>
+<hr>
 
 <form method="post" action="edit">
 <input type="hidden" name="id" value="<%= target_id %>" />
