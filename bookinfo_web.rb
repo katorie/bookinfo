@@ -53,12 +53,6 @@ server.mount_proc("/entry") { |req,res|
       '#{req.query['page']}',\
       '#{req.query['publish_date']}' );")
 
-    stm = "insert into bookinfos\
-       values ('#{req.query['id']}','#{req.query['title']}',\
-      '#{req.query['author']}','#{req.query['page']}',\
-      '#{req.query['publish_date']}' );"
-    p stm
-    dbh.do(stm)
 
     dbh.disconnect
 
